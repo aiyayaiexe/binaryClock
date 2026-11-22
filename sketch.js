@@ -87,9 +87,12 @@ function draw() {
 
     text(cell.number, cell.x, cell.y); //draws it to the number
   }
+
+  windowResized();
 }
 
-//My clock is a time embedded through colors in rows and columns of binary. I think it's a cool idea, especially with the flickering, and I like how the overall aesthetic of it looks. I began with a different thought, but then scrolled through my Pinterest feed until I saw this graphic of stylized binary. I then decided to create a clock where the time was embedded in the binary by colors, which I did then did. I started where I made the clock numbers lighter, which looked strange, so I instead made it black like empty space. I enjoyed this project and thought it was fun and a cool idea. I learned about second canvases in JS. I had not done that before, which was interesting to understand. Also, the time, flickering, and randomization are all things we discussed in class, but it was my first time applying them.
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 
