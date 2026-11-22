@@ -88,7 +88,6 @@ function draw() {
     text(cell.number, cell.x, cell.y); //draws it to the number
   }
 
-  windowResized();
 }
 
 function windowResized() {
